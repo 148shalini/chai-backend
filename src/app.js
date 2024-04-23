@@ -11,12 +11,17 @@ app.use(express.urlencoded({extended:true,limit:"16kb"}))
 //url se ata
 app.use(express.static("public"))//file folder store in server
 app.use(cookieParser())
+// app.use(upload.array()) // add extra
 
 
 //routes
 import userRouter from './routes/user.routes.js'
+//
 
+
+//
 //routes declaration to middelware lana hoga
 app.use("/api/v1/users",userRouter) 
+
 //http://localhost:8000/api/v1/users/register
 export {app}

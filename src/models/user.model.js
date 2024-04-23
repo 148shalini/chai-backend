@@ -35,11 +35,11 @@ const userSchema =new Schema({
         type:String,//cloudnary url
         
     },
-    watchHistory:{
+    watchHistory:[{
         type: Schema.Types.ObjectId,
         ref:"Video"
         
-    },
+    }],
     password:{
         type:String,
         required:[true,'Password is required']
