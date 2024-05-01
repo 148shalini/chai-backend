@@ -16,8 +16,8 @@ try {
         resource_type:'auto'
     })
     // file has upload successful
-    // console.log("file upload on cloudinary", response.url);
-    fs.unlinkSync(localFilePath)
+    console.log("file upload on cloudinary", response.url);
+    // fs.unlinkSync(localFilePath)
     return response;
 
 } catch (error) {
